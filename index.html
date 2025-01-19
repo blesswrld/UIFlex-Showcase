@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Library</title>
+    <link rel="stylesheet" href="css/lib.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="promo">
+        <div class="container">
+            <h1 class="text-center">promo header</h1>
+            <h2 class="text-center mt-20">promo text</h2>
+
+            <div class="carousel" id="example">
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0"></li>
+                    <li data-slide-to="1"></li>
+                    <li data-slide-to="2"></li>
+                    <!-- <li data-slide-to="3"></li> -->
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-slides">
+                        <div class="carousel-item">
+                            <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/camping-on-top-of-the-mountain-during-sunset-free-photo.jpg?w=600&quality=80" alt="AnyPhotoHere">
+                        </div> <!-- 0 -->
+                        <div class="carousel-item">
+                            <img src="https://miro.medium.com/v2/resize:fit:1400/1*uNCVd_VqFOcdxhsL71cT5Q.jpeg" alt="AnyPhotoHere">
+                        </div> <!-- 1 -->
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUJ-GVxj9ccx2tR1zUe1nJDRjtsDjAlYANA&s" alt="AnyPhotoHere">
+                        </div> <!-- 2 -->
+                        <!-- <div class="carousel-item">
+                            <img src="https://www.recordnet.com/gcdn/presto/2021/03/22/NRCD/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.JPG?width=660&height=425&fit=crop&format=pjpg&auto=webp" alt="AnyPhotoHere">
+                        </div> --> <!-- 3 -->
+                    </div>
+                </div>
+                <a href="#" class="carousel-prev" data-slide="prev">
+                    <span class="carousel-prev-icon">&lt;</span>
+                </a>
+                <a href="#" class="carousel-next" data-slide="next">
+                    <span class="carousel-next-icon">&gt;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="goods">
+        <div class="container">
+            <h2 class="text-center">
+                h2 header here
+            </h2>
+
+            <div class="goods_items d-flex">
+                <div class="goods d-flex f-space-around">
+                    <div class="card mt-20 ml-20">
+                        <img class="card-img" src="#" alt="AnyPhoto">
+                        <div class="card-body">
+                            <div class="card-title">title here</div>
+                            <p class="card-text">text here</p>
+                            <a href="#" id="trigger" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModal">read more</a>
+                        </div>
+                    </div>
+                <div class="card mt-20 ml-20">
+                        <img class="card-img" src="#" alt="AnyPhoto">
+                        <div class="card-body">
+                            <div class="card-title">title here</div>
+                            <p class="card-text">text here</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModal1">read more</a>
+                        </div>
+                    </div>
+                <div class="card mt-20 ml-20">
+                        <img class="card-img" src="#" alt="AnyPhoto">
+                        <div class="card-body">
+                            <div class="card-title">title here</div>
+                            <p class="card-text">text here</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModal3">read more</a>
+                        </div>
+                    </div>
+                <!-- <div class="card mt-20">
+                    <img class="card-img" src="https://www.apple.com/newsroom/images/product/iphone/lifestyle/Apple_Shot-on-iPhone-Challenge-2020_Austin-Mann_01072020_big.jpg.large.jpg" alt="photo">
+                    <div class="card-body">
+                        <div class="card-title">Card title</div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque placeat qui suscipit.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModal3">Link to</a>
+                    </div>
+                </div> --> <!-- do not forget change the data-target based on the id of your modal -->
+                <div class="modal" id="exampleModal"> <!-- first modal -->
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <button class="close" data-close>
+                                <span>&times;</span>
+                            </button>
+                                <div class="modal-header">
+                                    <div class="modal-title">
+                                        title here
+                                    </div>
+                                </div>
+                                    <div class="modal-body">
+                                        body here
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger" data-close>Close</button>
+                                        <button class="btn btn-success">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="modal" id="exampleModal1"> <!-- second modal -->
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <button class="close" data-close>
+                                    <span>&times;</span>
+                                </button>
+                                <div class="modal-header">
+                                    <div class="modal-title">
+                                        title here
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-close>Close</button>
+                                    <button class="btn btn-success">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal" id="exampleModal2"> <!-- third modal -->
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <button class="close" data-close>
+                                    <span>&times;</span>
+                                </button>
+                                <div class="modal-header">
+                                    <div class="modal-title">
+                                        title here
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-close>Close</button>
+                                    <button class="btn btn-success">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- if you need more modals just copy and past this: -->
+                    <!-- <div class="modal" id="exampleModal3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <button class="close" data-close>
+                                    <span>&times;</span>
+                                </button>
+                                <div class="modal-header">
+                                    <div class="modal-title">
+                                        title here
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-close>Close</button>
+                                    <button class="btn btn-success">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --> <!-- do not forget change the special id -->
+            </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="text-center">header here</h2>
+            <div class="accordion mt-20 block-center">
+                <div class="accordion-item">
+                    <div class="accordion-head">
+                        <span>accordion title here</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            accordion description here
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">
+                        <span>accordion title here</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">accordion description here</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">
+                        <span>accordion title here</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">accordion description here</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="questions">
+        <div class="container">
+            <h2 class="text-center">header here</h2>
+            <div class="tab mt-20 block-center w-100">
+                <div class="tab-panel d-flex" data-tabpanel>
+                    <div class="tab-item tab-item--active">question number 1 here</div>
+                    <div class="tab-item">question number 2 here</div>
+                    <div class="tab-item">question number 3 here</div>
+                    <!-- <div class="tab-item">question number 4 here </div> -->
+                    <div class="tab-content tab-content--active fadeIn">response number 1 here</div>
+                    <div class="tab-content fadeIn">response number 2 here</div>
+                    <div class="tab-content fadeIn">response number 3 here</div>
+                    <!-- <div class="tab-content fadeIn">response number 4 here</div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <h2 class="text-center">feedback</h2>
+            <form action="#">
+                <input type="phone" required placeholder="phone">
+                <input type="email" required placeholder="e-mail">
+                <button class="btn btn-submit">send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="d-flex f-centered">
+        <div class="text-color-danger" style="font-family: 'Montserrat', serif; animation: pulse 1.5s infinite;">
+            create with &hearts; blesswrld</span>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+
+
+    <script src="js/lib.js"></script>
+    <script src='js/script.js'></script>
+</body>
+
+</html>
